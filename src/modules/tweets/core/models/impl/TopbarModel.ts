@@ -1,6 +1,6 @@
 import {ITopbarModel} from "../int/ITopbarModel";
 import {ISharedModel} from "../int/ISharedModel";
-import {Tweet} from "../../entities/Tweet";
+import {LollibondBase} from "../../entities/Tweet";
 export class TopbarModel implements ITopbarModel {
     public static $inject: Array<string> = ["ISharedModel"];
     public tweetContent: string;
@@ -16,7 +16,7 @@ export class TopbarModel implements ITopbarModel {
     }
 
     public addTweet(): void {
-        this.sharedModel.tweets.push(new Tweet("@brecht", this.tweetContent, false));
+        this.sharedModel.tweets.push(new LollibondBase("@raza", this.tweetContent, false));
         this.tweetContent = "";
     }
 }

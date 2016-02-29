@@ -1,4 +1,4 @@
-import {Tweet} from "../../entities/Tweet";
+import {LollibondBase} from "../../entities/Tweet";
 export interface ITweetService {
-    getAll(): Array<Tweet>;
+    getAll(): Array<LollibondBase>;
 }

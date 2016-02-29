@@ -1,6 +1,6 @@
-import {Tweet} from "../../entities/Tweet";
+import {LollibondBase} from "../../entities/Tweet";
 export interface ISharedModel {
-    tweets: Array<Tweet>;
+    tweets: Array<LollibondBase>;
     topbarCollapsed: Boolean;
     sidebarCollapsed: Boolean;
     toggleTopbar: () => void;

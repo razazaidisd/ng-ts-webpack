@@ -1,9 +1,9 @@
 import {ISharedModel} from "../int/ISharedModel";
-import {Tweet} from "../../entities/Tweet";
+import {LollibondBase} from "../../entities/Tweet";
 import {ITweetService} from "../../services/int/ITweetService";
 export class SharedModel implements ISharedModel {
     public static $inject: Array<string> = ["ITweetService"];
-    public tweets: Array<Tweet>;
+    public tweets: Array<LollibondBase>;
     private _topbarCollapsed: Boolean;
     private _sidebarCollapsed: Boolean;
 

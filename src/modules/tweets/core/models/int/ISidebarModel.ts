@@ -1,5 +1,5 @@
-import {Tweet} from "../../entities/Tweet";
+import {LollibondBase} from "../../entities/Tweet";
 export interface ISidebarModel {
     toggleCollapsed: () => void;
-    tweets: Array<Tweet>;
+    tweets: Array<LollibondBase>;
 }

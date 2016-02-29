@@ -4,5 +4,5 @@ import {PageAboutComponent} from "./components/pageAbout/PageAboutComponent";
 import {config as routesConfig} from "./configs/routes";
 
 angular.module("app.about", ["ngRoute"])
-    .component("pageAbout", new PageAboutComponent())
+    .component("pageAbouts", new PageAboutComponent())
     .config(routesConfig);

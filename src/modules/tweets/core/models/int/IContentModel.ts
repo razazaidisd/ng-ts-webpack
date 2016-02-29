@@ -1,4 +1,4 @@
-import {Tweet} from "../../entities/Tweet";
+import {LollibondBase} from "../../entities/Tweet";
 export interface IContentModel {
-    tweets: Array<Tweet>;
+    tweets: Array<LollibondBase>;
 }

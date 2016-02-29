@@ -5,7 +5,7 @@ export class TweetTopbarComponent implements ng.IComponentOptions{
     public template: string = `
         <div>
             <div class="collapsed-content" ng-if="!$ctrl.sharedModel.topbarCollapsed">
-                <h1><i class="fa fa-twitter"></i>&nbsp;Post a new tweet</h1>
+                <h1><i class="fa fa-twitter"></i>&nbsp;Post a new  sd asdads tweet</h1>
                 <textarea class="form-control" ng-model="$ctrl.model.tweetContent"></textarea><br/>
                 <button ng-disabled="$ctrl.model.tweetContent === ''"
                     ng-click="$ctrl.post()"

@@ -1,12 +1,12 @@
 import {ITweetService} from "../../services/int/ITweetService";
 import {ISharedModel} from "../int/ISharedModel";
 import {SharedModel} from "../impl/SharedModel";
-import {Tweet} from "../../entities/Tweet";
+import {LollibondBase} from "../../entities/Tweet";
 import Spy = jasmine.Spy;
 describe("model: SharedModel", () => {
     var tweetServiceMock: ITweetService;
     var sharedModel: ISharedModel;
-    var getAllResult: Array<Tweet> = [new Tweet("@test", "test", false)];
+    var getAllResult: Array<LollibondBase> = [new LollibondBase("@test", "test", false)];
     beforeEach(() => {
         tweetServiceMock = jasmine.createSpyObj("TweetService", ["getAll"]);
         (<Spy>tweetServiceMock.getAll).and.returnValue(getAllResult);
